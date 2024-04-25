@@ -1,6 +1,9 @@
 require './lib/election'
 require './lib/race'
 require './lib/candidate'
+RSpec.configure do |config|
+  config.formatter = :documentation
+end
 
 RSpec.describe "Election Day" do
   describe "iteration 1" do
